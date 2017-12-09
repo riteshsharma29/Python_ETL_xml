@@ -5,6 +5,4 @@ This script shows converting couple of xml formats into csv easily using Python 
 
 Requirements :
 
-petl
-pandas
-numpy
+petl,pandas,numpy
