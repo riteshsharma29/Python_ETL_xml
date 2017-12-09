@@ -2,18 +2,20 @@
 # coding: utf-8 -*-
 
 import petl as etl
-import json,sys
+import sys
 import pandas as pd
 import numpy as np
 
+#Example 1
 #xml
 #based on the structure update args in this case : 'row' and kargs in this case
 tabl = etl.fromxml('data.xml','row',{'Id':'Id','PID':'PID','Val':'Val'})
 #export result to csv file
 etl.tocsv(tabl,'data.csv')
 
-
 ####################################################################################
+
+#Example 2
 
 mpu = etl.fromxml('data2.xml','row',{'field name=MID':'field'})
 #export result to csv file
